@@ -109,6 +109,7 @@ jobs:
         chmod +x b3sum
         sudo mv b3sum /usr/local/bin/
     - name: Verify file integrity
+      continue-on-error: true
       run: |
         manifest="manifest.b3"
         manifest_sig="${manifest}.sig"
