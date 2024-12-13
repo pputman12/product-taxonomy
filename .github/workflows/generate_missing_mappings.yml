@@ -68,6 +68,7 @@ jobs:
         make --file=Makefile clean
         VERBOSE=1 make --file=Makefile build
     - name: Create distribution manifest
+      continue-on-error: true
       run: |
         target="dist"
         manifest="manifest.b3"
