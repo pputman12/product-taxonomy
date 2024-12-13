@@ -7,5 +7,5 @@ plugins:
 incremental: true
 collections:
   releases:
-    output: true
+    output: truefesfsea
     permalink: /releases/:title/
